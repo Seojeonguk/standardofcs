@@ -1,0 +1,45 @@
+.findpw-card-close-btn {
+}
+
+.findpw-card-title {
+  font-size: 21px;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.findpw-card-info {
+  margin-top: 2em;
+  font-size: 18px;
+}
+
+.findpw-right-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.findpw-card-form {
+}
+.findpw-card-email {
+}
+.findpw-card-btns {
+  margin-top: 0.25em;
+  display: flex;
+  justify-content: right;
+}
+.findpw-card-btn {
+  border: 1px solid #696969;
+  background-color: #696969;
+  color: white;
+  width: fit-content;
+  padding: 0.4em 1em;
+  border-radius: 30px;
+  letter-spacing: 0.2em;
+  transition: all 0.7s ease-out;
+
+  &:hover {
+    cursor: pointer;
+    color: #696969;
+    background-color: white;
+    transition: all 0.3s ease-out;
+  }
+}

@@ -1,0 +1,210 @@
+//전체크기는 300 x 400
+:root {
+  --regist-width: 280px;
+  --regist-height: 450px;
+  --regist-width-card: 94%;
+  --regist-width-card-edge: 47%;
+  --regist-height-card-edge: 25px;
+  --color-book-gray: #495057;
+  --color-inner-gray: #f8f8f8;
+}
+
+@media (min-width: 600px) {
+  .q-dialog__inner--minimized > div {
+    max-width: none;
+  }
+}
+
+.dialog-position-r {
+  position: relative;
+  box-shadow: none !important;
+  height: 60% !important;
+  max-height: 70% !important;
+  max-height: none;
+
+  .dialog-design-r {
+    display: flex;
+    height: 100%;
+  }
+
+  .dialog-inner-r {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+}
+
+.btnz-r {
+  z-index: 1000;
+}
+
+.dialog-width {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .horizontal-l {
+    width: 70%;
+  }
+  .horizontal-r {
+    width: 25%;
+  }
+}
+
+.register-btns {
+  height: 100%;
+  text-align: center;
+  border: 1px solid gray;
+  width: fit-content;
+  border-radius: 30px;
+  padding: 0.2em 0;
+  transition: all 0.7s ease-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: gray;
+    transition: all 0.3s ease-out;
+    color: white;
+  }
+}
+
+.disabled-check {
+  pointer-events: none;
+}
+
+.submit-btns {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 0 0 0 !important;
+}
+
+.q-gutter-y-md > *,
+.q-gutter-md > * {
+  margin-top: 5px !important;
+}
+
+.book-r {
+  display: flex !important;
+  flex-direction: column !important;
+  box-shadow: none !important;
+}
+.left-card-top-r {
+  width: var(--regist-width);
+  height: var(--regist-height-card-edge);
+}
+.left-card-top-left-r {
+  width: var(--regist-width-card-edge);
+  height: 100%;
+  background-color: var(--color-inner-gray);
+  border-top-left-radius: 100% !important;
+}
+.left-card-top-right-r {
+  width: var(--regist-width-card-edge);
+  height: 100%;
+  background-color: var(--color-inner-gray);
+  border-top-right-radius: 100% !important;
+}
+
+.left-card-back-r {
+  display: flex;
+  justify-content: flex-end;
+  width: var(--regist-width);
+  height: var(--regist-height);
+  background-color: var(--color-book-gray);
+  border-top-left-radius: 15px;
+}
+.left-card-r {
+  width: var(--regist-width-card);
+  height: 100%;
+  padding: 2em 1em 1em 1em;
+  background-color: var(--color-inner-gray);
+}
+
+.left-card-bottom-back-r {
+  width: var(--regist-width);
+  height: var(--regist-height-card-edge);
+  background-color: var(--color-book-gray);
+}
+.left-card-bottom-r {
+  width: var(--regist-width-card);
+  height: 100%;
+  background-color: var(--color-inner-gray);
+}
+.left-card-bottom-left-r {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  border-top-left-radius: 100% !important;
+}
+.left-card-bottom-right-r {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  border-top-right-radius: 100% !important;
+}
+/* right */
+.right-card-top-r {
+  width: var(--regist-width);
+  height: var(--regist-height-card-edge);
+}
+.right-card-top-left-r {
+  width: var(--regist-width-card-edge);
+  height: 100%;
+  background-color: var(--color-inner-gray);
+  border-top-left-radius: 100% !important;
+}
+.right-card-top-right-r {
+  width: var(--regist-width-card-edge);
+  height: 100%;
+  background-color: var(--color-inner-gray);
+  border-top-right-radius: 100% !important;
+}
+
+.right-card-back-r {
+  display: flex;
+  justify-content: flex-start;
+  width: var(--regist-width);
+  height: var(--regist-height);
+  background-color: var(--color-book-gray);
+  border-top-right-radius: 15px;
+}
+.right-card-r {
+  width: var(--regist-width-card);
+  height: 100%;
+  padding: 0 1em 1em 1em;
+  background-color: var(--color-inner-gray);
+}
+
+.right-card-bottom-back-r {
+  width: var(--regist-width);
+  height: var(--regist-height-card-edge);
+  background-color: var(--color-book-gray);
+}
+.right-card-bottom-r {
+  width: var(--regist-width-card);
+  height: 100%;
+  background-color: var(--color-inner-gray);
+}
+.right-card-bottom-left-r {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  border-top-left-radius: 100% !important;
+}
+.right-card-bottom-right-r {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+  border-top-right-radius: 100% !important;
+}

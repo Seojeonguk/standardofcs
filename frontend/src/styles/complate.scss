@@ -1,0 +1,30 @@
+.complate-content {
+  font-weight: bold;
+  text-align: center;
+  margin: 2em 0;
+  &.first {
+    font-size: 24px;
+  }
+  &.second {
+    font-size: 18px;
+  }
+}
+.finish-regist {
+  .finish-regist-btn-login {
+    border: 1px solid #696969;
+    background-color: #696969;
+    color: white;
+    width: fit-content;
+    padding: 0.4em 1em;
+    border-radius: 30px;
+    letter-spacing: 0.2em;
+    transition: all 0.7s ease-out;
+
+    &:hover {
+      cursor: pointer;
+      color: #696969;
+      background-color: white;
+      transition: all 0.3s ease-out;
+    }
+  }
+}

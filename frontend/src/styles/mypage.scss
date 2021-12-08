@@ -1,0 +1,223 @@
+:root {
+  // 초록색버전
+  // --color-book: #a2b29f;
+  // --color-inner: #ccd8c8;
+  // --color-i: #e5ebe3;
+  --color-book: #696969;
+  --color-inner: #c0c0c0;
+  --color-i: #dcdcdc;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ leftpage.vue ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.mypage-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 2em;
+}
+
+.profile-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-name {
+  margin: 0.5em 0 1em;
+}
+
+.mypage-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mypage-menu div {
+  margin: 0.2em 0;
+  width: 80%;
+}
+
+.mypage-menu div:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ profile.vue ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.profile-right-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+
+  .modify-btn {
+    background-color: var(--color-book);
+    margin: 1em 0;
+  }
+}
+
+.problem-right-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ modify.vue ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.modify-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .modify-title {
+    display: block;
+    font-size: 1.5em;
+    margin: 1.5em 0 0;
+  }
+
+  .submit-wrap {
+    margin: 3em 0;
+  }
+
+  .modify-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+
+    .modi-img {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 1em 0;
+    }
+
+    .upload-btn {
+      background-color: #8b8b8b;
+      color: white;
+      width: fit-content;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      letter-spacing: 0.2em;
+      transition: all 0.7s ease-out;
+
+      &:hover {
+        cursor: pointer;
+        color: #696969;
+        background-color: #c2c2c2;
+        transition: all 0.3s ease-out;
+      }
+    }
+
+    .upload-btn:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.form-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.click-myleft {
+  transform: scale(1.05);
+  font-weight: 700;
+}
+
+.subbtn {
+  margin: 0 0.5em;
+}
+
+.before-profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ board.vue ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.mypage-board-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board-error {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.mypage-board-lists {
+  width: 95%;
+  height: 90%;
+  overflow: auto;
+}
+.mypage-board-list {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.5em 0;
+  border: 2.5px solid #696969;
+  border-radius: 15px;
+  transition: all 0.7s ease-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #696969;
+
+    color: white;
+    transition: all 0.3s ease-out;
+  }
+}
+
+.boardlist-1 {
+  width: 8%;
+}
+
+.boardlist-2 {
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.2em;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+  }
+}
+
+.boardlist-3 {
+  width: 22%;
+}

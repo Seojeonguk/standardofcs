@@ -1,0 +1,55 @@
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ register.vue ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.register-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 70%;
+
+  .horizontal {
+    display: flex;
+    justify-content: space-between;
+
+    .horizontal-l {
+      width: 85% !important;
+    }
+
+    .horizontal-r {
+      width: 13%;
+    }
+  }
+
+  .submit-btns {
+    margin-top: 20px;
+  }
+
+  .register-btns {
+    margin: 0 0 1em 0;
+  }
+}
+
+.form-wrap input,
+.form-wrap label,
+.form-wrap btn,
+.form-wrap div {
+  margin: 0 0 0.2em 0;
+  padding: 0;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ register.vue ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.login-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 50%;
+}

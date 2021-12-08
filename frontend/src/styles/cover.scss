@@ -1,0 +1,245 @@
+:root {
+  // 초록색버전
+  // --color-book: #a2b29f;
+  // --color-inner: #ccd8c8;
+  // --color-i: #e5ebe3;
+  --color-book: #696969;
+  --color-inner: #c0c0c0;
+  --color-i: #dcdcdc;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ App.vue ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.all-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background : {
+    image: url("../assets/desk2.jpg");
+    position: center center;
+    repeat: no-repeat;
+    size: cover;
+  }
+}
+
+.cstitle {
+  font-family: "EliceDigitalBaeum_Bold";
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ logout > main.vue ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.main-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  height: 100%;
+  padding: 2em;
+}
+
+.main-cover div:first-child {
+  width: 40%;
+}
+
+.main-cover div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  font-weight: 700;
+  width: 60%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--color-inner);
+  color: #000000;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ main > login, logout.vue ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.book-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+  height: 85vh;
+  margin: auto;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ nav.vue ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.nav-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 82%;
+  margin: auto;
+}
+
+.menu-btn {
+  margin: 0 0.2em;
+  // background-color: #bcbab8;
+  background-color: var(--color-inner) !important;
+  color: #000000;
+  border-radius: 10px 10px 0 0 !important;
+}
+
+.menu-btn-cover {
+  margin-right: 3em;
+}
+
+.click-menu {
+  background-color: var(--color-book) !important;
+  color: #ffffff !important;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ login-cover, logout-cover.vue ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.left-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 28%;
+  height: 100%;
+  background-color: var(--color-book);
+  border-right: none;
+  border-radius: 20px;
+
+  .open-left-wrap {
+    width: 95%;
+    height: 96%;
+    margin: auto 0;
+    background-color: var(--color-i);
+    color: #000000;
+    margin-right: 0;
+    border-radius: 15px 25px 25px 15px;
+    border-right: 1px dotted var(--color-book);
+  }
+}
+
+.right-wrap {
+  display: flex;
+  position: relative;
+  width: 72%;
+  height: 100%;
+  // border: 1px solid black;
+  border-radius: 20px;
+  background-color: var(--color-book);
+  color: #ffffff;
+
+  .shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // box-shadow: 18px 20px 20px -5px grey;
+    box-shadow: 0.5px 0.5px 1px #798777, 5px 1px 1px #b4bdb3,
+      6px 2px 1px #b4bdb3, 7px 3px 1px #b4bdb3, 8px 4px 1px #b4bdb3,
+      9px 5px 1px #b4bdb3, 10px 5.5px 0 #b4bdb3, 11px 6.5px 0 #b4bdb3,
+      12px 7.5px 0 #b4bdb3, 13px 8px 0 #b4bdb3, 14px 8.5px 3px #798777;
+    border-radius: 20px;
+  }
+
+  .inner-wrap {
+    width: 96%;
+    height: 96%;
+    margin: auto;
+    background-color: var(--color-i);
+    color: #000000;
+    border-radius: 15px;
+  }
+
+  .open-right-wrap {
+    width: 98%;
+    height: 96%;
+    margin: auto 0;
+    background-color: var(--color-i);
+    color: #000000;
+    border-radius: 25px 15px 15px 25px;
+  }
+}
+
+.info-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.info-mini-wrap {
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+  height: 60%;
+  // margin: auto;
+}
+
+.info-warn {
+  margin-top: 3em;
+  font-size: 18px;
+  font-weight: bold;
+  color: #696969;
+}
+.info-add {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  font-size: 48px;
+}
+.info-script {
+  font-size: 28px;
+  font-weight: bold;
+  width: 75%;
+  height: 3em;
+  margin-top: 1em;
+  color: #696969;
+  // transition: all 0.7s ease-out;
+  animation: 3s 2s ease-out forwards;
+}
+.script-icon {
+  color: red;
+  transition: all 0.7s ease-out;
+  &:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.125);
+    border-radius: 50%;
+  }
+}
+.add-after {
+  transition: all 0.7s ease-out;
+  color: gray !important;
+}
+.script {
+  border: 4px #dcdcdc solid;
+  border-radius: 1em;
+  background: transparent;
+  transition: all 0.7s ease-out;
+  background: linear-gradient(
+    270deg,
+    #dcdcdc,
+    #dcdcdc,
+    rgba(34, 34, 34, 0),
+    rgba(34, 34, 34, 0)
+  );
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+}
+
+.add-script {
+  border: 4px rgba(255, 45, 45, 0.8) solid;
+  border-radius: 1em;
+  background: transparent;
+  transition: all 0.7s ease-out;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 45, 45, 0.8),
+    rgba(255, 100, 100, 0.8),
+    rgba(34, 34, 34, 0),
+    rgba(34, 34, 34, 0)
+  );
+  background-position: 1% 50%;
+  background-size: 300% 300%;
+  text-decoration: none;
+}
+.add-script:hover {
+  cursor: pointer;
+  color: #fff;
+  border: 3px solid rgba(223, 190, 106, 0);
+  background-position: 99% 50%;
+}
+/* -----------그림자 --------*/

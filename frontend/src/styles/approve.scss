@@ -1,0 +1,57 @@
+.approve-title {
+  font-size: 1.5em;
+  height: 5%;
+  margin: 0.5em 0;
+}
+
+.approve-list-wrap {
+  height: 90%;
+  overflow: auto;
+}
+
+.approve-wrap {
+  overflow: auto;
+
+  .approve-problem {
+    width: 75%;
+    text-align: left;
+    border: 1px solid #696969;
+    border-radius: 20px;
+    padding: 0.7em 2em;
+    margin: 0.5em auto;
+
+    .top-wrap {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .top-wrap span:first-child {
+      width: 80%;
+      font-size: 2em;
+    }
+    .top-wrap span:last-child {
+      width: 20%;
+      text-align: center;
+    }
+
+    .bottom-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .ans-wrap {
+        font-size: 1.2em;
+      }
+      .btn-wrap button {
+        margin: 0 0.2em;
+      }
+    }
+  }
+}
+
+.anss {
+  background-color: #c0c0c0;
+  margin-right: 0.7em;
+  padding: 0 0.3em;
+}

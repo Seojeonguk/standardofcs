@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "EliceDigitalBaeum_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.first-wrap {
+  display: flex;
+  height: 100%;
+
+  .first-left {
+    width: 68%;
+    height: 100%;
+    background : {
+      image: url("../assets/cover.gif");
+      position: center center;
+      repeat: no-repeat;
+      size: cover;
+    }
+  }
+
+  .first-right {
+    position: relative;
+    width: 35%;
+    height: 100%;
+    background-color: lightgray;
+
+    .first-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60%;
+      font-size: 5em;
+      font-family: "EliceDigitalBaeum_Bold";
+    }
+
+    .first-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .login-btn,
+      .regist-btn {
+        border: 3px solid gray;
+        width: fit-content;
+        padding: 0.8em 2em;
+        margin: 0 1em;
+        border-radius: 30px;
+        letter-spacing: 0.2em;
+        transition: all 0.7s ease-out;
+        font-weight: 700;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.1);
+          background-color: gray;
+          transition: all 0.3s ease-out;
+          color: white;
+        }
+      }
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 0;
+      height: 220px;
+      width: 230px;
+      left: 0;
+      background-image: url("../assets/mainCharachter_empty.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .login-modal,
+  .regist-modal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .login-wrap,
+    .regist-wrap {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .login-div,
+      .regist-div {
+        width: 30%;
+        height: 30%;
+        background-color: white;
+      }
+    }
+  }
+}
+
+.finish-regist {
+  display: flex;
+  justify-content: center;
+}
